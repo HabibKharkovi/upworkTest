@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
 import CountField from '../../utilities/countField/countField';
-import productImage from '../../assets/productImage.png';
 import { ReactComponent as CartClose } from '../../assets/cart_close_btn.svg';
 import './cartStyles.scss';
 

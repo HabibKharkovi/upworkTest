@@ -54,19 +54,17 @@ function App() {
   
   useEffect(() => {
       const cartList = localStorage.getItem('cartList');
-      setCartList(JSON.parse(cartList));
+      cartList && setCartList(JSON.parse(cartList));
   }, [currentProduct, cartOpen]);
 
 
   let totalItem = 0;
   let totalPrice = 0;
   
-  if(cartList){
-    cartList.forEach(item => {
-      totalItem += item.count;
-      totalPrice += item.price * item.count;
-    })
-  }
+  cartList.forEach(item => {
+    totalItem += item.count;
+    totalPrice += item.price * item.count;
+  })
 
   return (
     <div className="main">
