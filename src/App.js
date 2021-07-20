@@ -61,10 +61,12 @@ function App() {
   let totalItem = 0;
   let totalPrice = 0;
   
-  cartList.forEach(item => {
+  if(cartList){
+    cartList.forEach(item => {
       totalItem += item.count;
       totalPrice += item.price * item.count;
-  })
+    })
+  }
 
   return (
     <div className="main">
