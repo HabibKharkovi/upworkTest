@@ -1,0 +1,47 @@
+@import "../../variables.scss";
+
+.count {
+    &--field-wrapper {
+        margin-top: 16px;
+        display: flex;
+        height: 32px;
+    }
+    &_input {
+        height: 100%;
+        width: 61px;
+        border: 1px solid #D8D8D8;
+        box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.13);
+        font-size: 13px;
+        color: $primary-color;
+        font-weight: 900;
+        text-align: center;
+    }
+    &_decrement-btn {
+        font-size: 13px;
+        color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px 0px 0px 4px;
+        box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.13);
+        height: 100%;
+        width: 32px;
+        border: 1px solid #D8D8D8;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    &_increment-btn {
+        font-size: 13px;
+        color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 4px 4px 0;
+        box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.13);
+        height: 100%;
+        width: 32px;
+        border: 1px solid #D8D8D8;
+        font-weight: 900;
+        cursor: pointer;
+    }
+}
