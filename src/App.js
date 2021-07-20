@@ -5,7 +5,7 @@ import Collection from './components/collection/collection';
 import Cart from './components/cart/cart';
 import ProductPage from './components/productPage/productPage';
 import { Switch, Route } from "react-router-dom";
-import './global.css';
+import './global.scss';
 
 function App() {
 
